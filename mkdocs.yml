@@ -30,7 +30,7 @@ theme:
   name: material
   palette:
     primary: "blue grey"
-    accent: 'green'
+    accent: 'deep orange'
   logo: 'assets/images/vessel.png'
   font:
     text: 'Ubuntu'
