@@ -1,5 +1,9 @@
 site_name: containertips.dev
 
+nav:
+    - 'index.md'
+    - about.md
+
 
 site_author: Marcos Cano
 site_description: All about Docker, K8 and Containers in general
