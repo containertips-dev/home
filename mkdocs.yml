@@ -58,6 +58,7 @@ extra:
 
 plugins:
   - search
+  #- macros
   #- markdownextradata: {}
 markdown_extensions:
   - codehilite:
@@ -87,5 +88,6 @@ markdown_extensions:
 
 extra_css:
     - assets/css/extra.css
+    - assets/css/contact_form.css
 
 use_directory_urls: true
