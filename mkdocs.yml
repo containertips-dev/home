@@ -1,8 +1,14 @@
 site_name: containertips.dev
 
 nav:
-    - 'index.md'
-    - about.md
+    - Home: 'index.md'
+    - Docker:
+        - docker/intro.md
+    - About:
+        - 'about.md'
+    - Contact:
+        - 'contact.md'
+
 
 
 site_author: Marcos Cano
@@ -11,23 +17,23 @@ site_description: All about Docker, K8 and Containers in general
 #google_analytics: ['UA-36723568-3', 'mkdocs.org']
 
 repo_name: containertips.dev
-repo_url: https://github.com/jmarcos-cano/containertips.dev
+repo_url: https://github.com/jmarcos-cano/containertips.dev/src
 edit_uri: ""
 
 theme:
   name: material
   palette:
-    primary: "blue"
-    accent: 'blue'
-  logo: 'assets/images/logo.png'
+    primary: "blue grey"
+    accent: 'green'
+  logo: 'assets/images/vessel.png'
   font:
     text: 'Ubuntu'
     code: 'Ubuntu Mono'
   language: 'en'
   favicon: 'assets/images/favicon.ico'
-#  include_sidebar: True
-#   feature:
-#     tabs: true
+  #include_sidebar: False
+  feature:
+    tabs: true
 
 
 extra:
@@ -37,19 +43,38 @@ extra:
     - type: 'github'
       link: 'https://github.com/squidfunk'
     - type: 'twitter'
-      link: 'https://twitter.com/squidfunk'
+      link: 'https://twitter.com/Marcos_Kno'
     - type: 'linkedin'
-      link: 'https://www.linkedin.com/in/squidfunk'
+      link: 'https://www.linkedin.com/in/marcos-cano-804a1787/'
 
 plugins:
   - search
   #- markdownextradata: {}
 markdown_extensions:
-  - codehilite
+  - codehilite:
+        guess_lang: False
+        use_pygments: True
+        noclasses: True
+        pygments_style: monokai
   - footnotes
   - admonition
   - toc:
         permalink: true
+  - pymdownx.extra
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.mark
+  - pymdownx.emoji:
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.superfences
+
+extra_css:
+    - assets/css/extra.css
+
+use_directory_urls: true
