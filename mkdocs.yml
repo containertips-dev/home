@@ -10,6 +10,8 @@ nav:
         - docker/index.md
     - Kubernetes:
         - kubernetes/index.md
+    - Devops:
+        - devops/index.md
     - About:
         - 'about.md'
     - Contact:
@@ -43,6 +45,7 @@ theme:
 
 
 extra:
+  manifest: 'manifest.webmanifest'
   search:
     language: 'en, es'
   social:
