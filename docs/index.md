@@ -13,4 +13,8 @@ Welcome to www.containertips.dev I post content about:
 - Containers in General. :package:
 - Devops
 
+---
 
+# Courses
+
+I will soon :tada: start launching new docker and kubernetes courses, obviously in `español`; they will be aimed to all the spanish speaking community that will be encouraged by these courses.

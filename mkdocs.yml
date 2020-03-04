@@ -12,10 +12,8 @@ nav:
         - kubernetes/index.md
     - Devops:
         - devops/index.md
-    - About:
-        - 'about.md'
-    - Contact:
-        - 'contact.md'
+    - About: 'about.md'
+    - Contact: 'contact.md'
 
 
 
@@ -39,7 +37,7 @@ theme:
     code: 'Ubuntu Mono'
   language: 'en'
   favicon: 'assets/images/favicon.ico'
-  #include_sidebar: False
+  #include_sidebar: True
   feature:
     tabs: true
 
