@@ -5,7 +5,7 @@
 ## Personal Info
 Howdy, My name is **Marcos Cano**.
 
-I live in ==Guatemala City :flag_gt:=={>>Central America}
+I live in ==Guatemala City :flag_gt:=={>>Central America<<}
 
 
 I have the privilege of being the [Docker Community Leader in Guatemala](https://www.meetup.com/Docker-Guatemala).

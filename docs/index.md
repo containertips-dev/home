@@ -5,11 +5,12 @@
 
 ---
 
-Welcome to [www.containertips.dev](www.containertips.dev) I post content about:
+Welcome to www.containertips.dev I post content about:
 
-- [Docker :whale:](https://www.docker.com/)
-- [Kubernetes :wheel_of_dharma:](https://kubernetes.io/)
+- [Docker :whale:](/docker/)
+- [Kubernetes :wheel_of_dharma:](/kubernetes/)
 - Container Orchestrators :notes:
 - Containers in General. :package:
+- Devops
 
 
