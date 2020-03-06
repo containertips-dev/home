@@ -33,8 +33,8 @@ theme:
     accent: 'deep orange'
   logo: 'assets/images/vessel.png'
   font:
-    text: 'Chakra Petch'
-    code: 'VT323'
+    text: 'Space Mono'
+    code: 'Inconsolata'
   language: 'en'
   favicon: 'assets/images/favicon.ico'
   #include_sidebar: True
