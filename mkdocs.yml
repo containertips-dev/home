@@ -6,6 +6,12 @@ nav:
         - docker/index.md
     - Kubernetes:
         - kubernetes/index.md
+        - Helm:
+            - Intro: kubernetes/helm/index.md
+            - 1. Comenzando: kubernetes/helm/1.start.md
+            - 2. Charts: kubernetes/helm/2.charts.md
+            - 3. Subcharts: kubernetes/helm/3.subcharts.md
+            - 4. Templates: kubernetes/helm/3.templates.md
     - Devops:
         - devops/index.md
     - About: 'about.md'
