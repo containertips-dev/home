@@ -40,7 +40,7 @@
     
     
       
-        <title>Getting Started with Helm - containertips.dev</title>
+        <title>1. Comenzando - containertips.dev</title>
       
     
     
@@ -121,7 +121,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Getting Started with Helm
+                1. Comenzando
               
             </span>
           
@@ -189,14 +189,16 @@
       
         
 
-<nav class="md-tabs" data-md-component="tabs">
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
         
   <li class="md-tabs__item">
     
-      <a href="../../.." class="md-tabs__link md-tabs__link--active">
+      <a href="../../.." class="md-tabs__link">
         Home
       </a>
     
@@ -221,7 +223,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../" class="md-tabs__link">
+        <a href="../../" class="md-tabs__link md-tabs__link--active">
           Kubernetes
         </a>
       
@@ -341,10 +343,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       Kubernetes
@@ -365,6 +369,101 @@
     <a href="../../" title="Kubernetes" class="md-nav__link">
       Kubernetes
     </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2" checked>
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Helm
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        Helm
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../" title="Intro" class="md-nav__link">
+      Intro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="1. Comenzando" class="md-nav__link md-nav__link--active">
+      1. Comenzando
+    </a>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../2.charts.md" title="2. Charts" class="md-nav__link">
+      2. Charts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../3.subcharts.md" title="3. Subcharts" class="md-nav__link">
+      3. Subcharts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../3.templates.md" title="4. Templates" class="md-nav__link">
+      4. Templates
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -494,26 +593,14 @@ docker-for-desktop
 version.BuildInfo<span style="color: #f92672">{</span>Version:<span style="color: #e6db74">&quot;v3.1.2&quot;</span>, GitCommit:<span style="color: #e6db74">&quot;d878d4d45863e42fd5cff6743294a11d28a9abce&quot;</span>, GitTreeState:<span style="color: #e6db74">&quot;clean&quot;</span>, GoVersion:<span style="color: #e6db74">&quot;go1.13.8&quot;</span><span style="color: #f92672">}</span>
 </pre></div>
 
-<p>Using Helm
-If this is your first time using Helm, here are the critical commands.</p>
-<p>helm help: Show help. You can get more info on a command by doing helm COMMAND --help, such as helm list --help
+<h1 id="usando-helm">Usando Helm<a class="headerlink" href="#usando-helm" title="Permanent link">&para;</a></h1>
+<p>Algunos comands de helm</p>
+<div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>helm help: Show help. You can get more info on a <span style="color: #f8f8f2">command</span> by doing helm COMMAND --help, such as helm list --help
 helm search STRING: Find charts to install
-helm install -n NAME CHART: Install something (create a release). Example: helm install -n my-test stable/wordpress
+helm install -n NAME CHART: Install something <span style="color: #f92672">(</span>create a release<span style="color: #f92672">)</span>. Example: helm install -n my-test stable/wordpress
 helm status NAME: Get the status of a release
 helm delete NAME: Delete the release. Example: helm delete my-test
-Up next: Charts.</p>
-<p>© 2020 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About</p>
+</pre></div>
                 
                   
                 
@@ -530,6 +617,41 @@ About</p>
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../" title="Intro" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Intro
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../../../devops/" title="Devops" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Devops
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
