@@ -591,19 +591,21 @@
 
 <h1 id="chartyaml">Chart.yaml<a class="headerlink" href="#chartyaml" title="Permanent link">&para;</a></h1>
 <p>Cambiemos la descripcion</p>
-<p><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f92672">apiVersion</span><span style="color: #f8f8f2">:</span> <span style="color: #ae81ff">v1</span>      <span style="color: #75715e"># The chart schema version, always v1 for Helm 2</span>
+<div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f92672">apiVersion</span><span style="color: #f8f8f2">:</span> <span style="color: #ae81ff">v1</span>      <span style="color: #75715e"># The chart schema version, always v1 for Helm 2</span>
 <span style="color: #f92672">version</span><span style="color: #f8f8f2">:</span> <span style="color: #ae81ff">0.1.0</span>      <span style="color: #75715e"># The version of the chart. Change this for each release.</span>
 <span style="color: #f92672">appVersion</span><span style="color: #f8f8f2">:</span> <span style="color: #e6db74">&quot;1.0&quot;</span>   <span style="color: #75715e"># The version of the main app in this chart. OPTIONAL</span>
 <span style="color: #f92672">description</span><span style="color: #f8f8f2">:</span> <span style="color: #ae81ff">An example cloud native voting app</span>
 <span style="color: #f92672">name</span><span style="color: #f8f8f2">:</span> <span style="color: #ae81ff">voter</span>
 </pre></div>
-Save this. You can verify that you correctly entered the data by running:</p>
-<p>$ helm inspect chart ./voter
-apiVersion: v1
-appVersion: "1.0"
-description: An example cloud native voting app
-name: voter
-version: 0.1.0
+
+<p>Guardemos y corramos:</p>
+<p><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #ae81ff">$ helm inspect chart ./voter</span>
+<span style="color: #ae81ff">apiVersion</span><span style="color: #f8f8f2">:</span> <span style="color: #ae81ff">v1</span>
+<span style="color: #f92672">appVersion</span><span style="color: #f8f8f2">:</span> <span style="color: #e6db74">&quot;1.0&quot;</span>
+<span style="color: #f92672">description</span><span style="color: #f8f8f2">:</span> <span style="color: #ae81ff">An example cloud native voting app</span>
+<span style="color: #f92672">name</span><span style="color: #f8f8f2">:</span> <span style="color: #ae81ff">voter</span>
+<span style="color: #f92672">version</span><span style="color: #f8f8f2">:</span> <span style="color: #ae81ff">0.1.0</span>
+</pre></div>
 Next, we'll start working with Helm templates</p>
 <p>Configuring the Front-End
 Take a look at the values.yaml file generated for us:</p>
