@@ -1,7 +1,7 @@
 # Helm Workshop: Docker Online Meetups
 El proposito es poder escribir Helm v3 Charts
 
-## Workshop Format
+## Formato del Taller
 Este taller tiene 4 secciones importantes.
 
 - Getting Started
@@ -24,12 +24,3 @@ dockersamples/examplevotingapp_worker)
 4. Redis cache (redis:alpine)
 5. A PostgreSQL database (postgres:9.4)
 
-
-# Referencias
-Estas seran las imagenes a usar:
-
-redis:alpine - The Redis server for a work queue
-postgres:9.4 - The persistent data storage
-dockersamples/examplevotingapp_result:before - The admin viewer
-dockersamples/examplevotingapp_vote:before - The voting frontend
-dockersamples/examplevotingapp_worker - The queue worker
