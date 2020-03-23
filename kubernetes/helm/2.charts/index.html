@@ -567,14 +567,12 @@
 <li><code>templates/</code>: transforma los k8-manifest a manifests que se pueden desplegar.</li>
 <li><code>values.yaml</code>: que define parametros con los cuales uno puede manejar y configurar con el Chart.</li>
 </ul>
-<p>!!! info ""
-    Por lo menos estos 3 componentes se pueden empaquetar en un Chart el cual puede ser desplegado en cualquier ambiente y usualmente se pueden "subir y guardar" en un repositorio como <a href="https://hub.helm.sh">https://hub.helm.sh</a>.</p>
+<details class="info" open="open"><summary></summary><p>Por lo menos estos 3 componentes se pueden empaquetar en un Chart el cual puede ser desplegado en cualquier ambiente y usualmente se pueden "subir y guardar" en un repositorio como <a href="https://hub.helm.sh">https://hub.helm.sh</a>.</p>
+</details>
 <blockquote>
 <p><a href="https://helm.sh/docs/topics/charts/">Charts Docu</a></p>
 </blockquote>
-<p>Creating a Chart
-To get started, we need to create a new directory. In this guide, we will be using linux filepath conventions, though Windows-style filepaths work with similar commands.</p>
-<p>Start by running the Helm command to create a new basic chart:</p>
+<h1 id="como-crear-un-chart">Como crear un Chart ?<a class="headerlink" href="#como-crear-un-chart" title="Permanent link">&para;</a></h1>
 <p>$ helm create voter
 This will create a new directory named voter, and scaffold it out as follows:</p>
 <p>voter/
