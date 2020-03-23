@@ -2,10 +2,6 @@ site_name: containertips.dev
 
 nav:
     - Home: 'index.md'
-    - Blog:
-        - blog.md
-        - "2020":
-            - Hello: blog/2020/hello.md
     - Docker:
         - docker/index.md
     - Kubernetes:
