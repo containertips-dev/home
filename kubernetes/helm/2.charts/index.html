@@ -573,9 +573,11 @@
 <p><a href="https://helm.sh/docs/topics/charts/">Charts Docu</a></p>
 </blockquote>
 <h1 id="como-crear-un-chart">Como crear un Chart ?<a class="headerlink" href="#como-crear-un-chart" title="Permanent link">&para;</a></h1>
-<p>$ helm create voter
-This will create a new directory named voter, and scaffold it out as follows:</p>
-<p>voter/
+<div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>$ helm create voter
+</pre></div>
+
+<p>Esto creara una estructura de directorio de la siguiente manera (con scaffold):</p>
+<div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span>voter/
 ├── Chart.yaml
 ├── charts
 ├── templates
@@ -585,14 +587,16 @@ This will create a new directory named voter, and scaffold it out as follows:</p
 │   ├── ingress.yaml
 │   └── service.yaml
 └── values.yaml
-We will start by modifying the Chart.yaml</p>
-<p>Chart.yaml
-All we need to change in this file is the description.</p>
-<p>apiVersion: v1      # The chart schema version, always v1 for Helm 2
-version: 0.1.0      # The version of the chart. Change this for each release.
-appVersion: "1.0"   # The version of the main app in this chart. OPTIONAL
-description: An example cloud native voting app
-name: voter
+</pre></div>
+
+<h1 id="chartyaml">Chart.yaml<a class="headerlink" href="#chartyaml" title="Permanent link">&para;</a></h1>
+<p>Cambiemos la descripcion</p>
+<p><div class="codehilite" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #f92672">apiVersion</span><span style="color: #f8f8f2">:</span> <span style="color: #ae81ff">v1</span>      <span style="color: #75715e"># The chart schema version, always v1 for Helm 2</span>
+<span style="color: #f92672">version</span><span style="color: #f8f8f2">:</span> <span style="color: #ae81ff">0.1.0</span>      <span style="color: #75715e"># The version of the chart. Change this for each release.</span>
+<span style="color: #f92672">appVersion</span><span style="color: #f8f8f2">:</span> <span style="color: #e6db74">&quot;1.0&quot;</span>   <span style="color: #75715e"># The version of the main app in this chart. OPTIONAL</span>
+<span style="color: #f92672">description</span><span style="color: #f8f8f2">:</span> <span style="color: #ae81ff">An example cloud native voting app</span>
+<span style="color: #f92672">name</span><span style="color: #f8f8f2">:</span> <span style="color: #ae81ff">voter</span>
+</pre></div>
 Save this. You can verify that you correctly entered the data by running:</p>
 <p>$ helm inspect chart ./voter
 apiVersion: v1
